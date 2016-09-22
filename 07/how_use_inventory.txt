@@ -1,0 +1,76 @@
+	if (command == "SHOW INVENTORY")
+	{
+		player->getInventory()->renderItems();
+	}
+
+	if (command == "PICKUP SWORD")
+	{
+		player->getInventory()->addItem(new Sword());
+	}
+
+	if (command == "PICKUP KEY")
+	{
+		player->getInventory()->addItem(new Key());
+	}
+
+	if (command == "PICKUP HEALTH POTION")
+	{
+		player->getInventory()->addItem(new HealthPotion());
+	}
+	
+	if (command == "USE SWORD")
+	{
+		if (InventoryItem* item = player->getInventory()->getItem(InventoryItem::SWORD))
+		{
+			item->use();
+			player->getInventory()->update();
+		}
+		else
+			cout << "Uh oh, you do not have a sword!" << endl;
+	}
+
+	if (command == "USE KEY")
+	{
+		if (InventoryItem* item = player->getInventory()->getItem(InventoryItem::KEY))
+		{
+			item->use();
+			player->getInventory()->update();
+		}
+		else
+			cout << "Uh oh, you do not have a key!" << endl;
+	}
+
+	if (command == "USE HEALTH POTION")
+	{
+		if (InventoryItem* item = player->getInventory()->getItem(InventoryItem::HEALTHPOTION))
+		{
+			item->use();
+			player->getInventory()->update();
+		}
+		else
+			cout << "Uh oh, you do not have a health potion!" << endl;
+	}
+
+	if (command == "LOOK SWORD")
+	{
+		if (InventoryItem* item = player->getInventory()->getItem(InventoryItem::SWORD))
+			cout << item->getDescription() << endl;
+		else
+			cout << "Uh oh, you do not have a sword!" << endl;
+	}
+
+	if (command == "LOOK KEY")
+	{
+		if (InventoryItem* item = player->getInventory()->getItem(InventoryItem::KEY))
+			cout << item->getDescription() << endl;
+		else
+			cout << "Uh oh, you do not have a key!" << endl;
+	}
+
+	if (command == "LOOK HEALTH POTION")
+	{
+		if (InventoryItem* item = player->getInventory()->getItem(InventoryItem::HEALTHPOTION))
+			cout << item->getDescription() << endl;
+		else
+			cout << "Uh oh, you do not have a health potion!" << endl;
+	}
