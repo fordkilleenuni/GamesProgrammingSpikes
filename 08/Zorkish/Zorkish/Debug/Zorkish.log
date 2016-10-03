@@ -1,0 +1,19 @@
+﻿  UseCommand.cpp
+  PickupCommand.cpp
+  GoCommand.cpp
+  GameplayState.cpp
+  CommandManager.cpp
+  Generating Code...
+  Compiling...
+  StateManager.cpp
+  SelectAdventureState.cpp
+  NewHighScoreState.cpp
+  MainMenuState.cpp
+  LookCommand.cpp
+  HelpState.cpp
+  HelpCommand.cpp
+  HallOfFameState.cpp
+  AboutState.cpp
+  Generating Code...
+  Zorkish.vcxproj -> C:\Uni\GP\Spikes\08\Zorkish\Debug\Zorkish.exe
+  Zorkish.vcxproj -> C:\Uni\GP\Spikes\08\Zorkish\Debug\Zorkish.pdb (Full PDB)
