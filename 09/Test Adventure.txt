@@ -1,0 +1,10 @@
+Test Adventure
+1	Blue Area	You are in a blue area. In front of you there is a red glow, behind you a yellow light.	forward>2+back>4
+2	Red Area	You are in a red area. Behind you the glow of a blue light, in front of you a green light.	back>1+forward>3
+3	Green Area	You are surrounded by green, nothing around you except for a red glow in the distance behind you.	back>2
+4	Yellow Area	You are in a bright yellow area, with nothing around except a blue glow ahead of you in the distance.	forward>1
+Entities
+SWORD	SWRD	2
+CHEST	CHST	1
+BREAD	BRED	CHEST
+DAGGER	SWRD	CHEST
